@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>splitter</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h2>Spli</h2>
+        <h2>tter</h2>
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <div class="input">
+          <div class="bill">
+            <label for="bill">Bill</label>
+            <input type="text" id="bill" placeholder="0" />
+          </div>
+          <div class="percentage">
+            <h4>Select Tip %</h4>
+            <div class="labels">
+              <input type="radio" name="tip" id="tip-1" value="0.05" />
+              <label for="tip-1" class="tip">5%</label>
+
+              <input type="radio" name="tip" id="tip-2" value="0.10" />
+              <label for="tip-2" class="tip">10%</label>
+
+              <input type="radio" name="tip" id="tip-3" value="0.15" />
+              <label for="tip-3" class="tip">15%</label>
+
+              <input type="radio" name="tip" id="tip-4" value="0.25" />
+              <label for="tip-4" class="tip">25%</label>
+
+              <input type="radio" name="tip" id="tip-5" value="0.5" />
+              <label for="tip-5" class="tip">50%</label>
+            </div>
+          </div>
+
+          <div class="count">
+            <div class="labels">
+              <label for="count">Number of People</label>
+              <label for="zero" id="count">cant be zero</label>
+            </div>
+            <input type="text" name="people" id="people" placeholder="0" />
+          </div>
+          <button type="submit" class="submit_on_enter" id="submit">
+            submit
+          </button>
+        </div>
+        <div class="output">
+          <div class="tip-amount">
+            <div class="amount">
+              <h4>Tip Amount</h4>
+              <h5>/ person</h5>
+            </div>
+            <h1 class="amount-tip">$0.00</h1>
+          </div>
+          <div class="total-amount">
+            <div class="amount">
+              <h4>Total</h4>
+              <h5>/ person</h5>
+            </div>
+            <h1 class="amount-total">$0.00</h1>
+          </div>
+          <button id="reset"><a href="#">Reset</a></button>
+        </div>
+      </div>
+    </main>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

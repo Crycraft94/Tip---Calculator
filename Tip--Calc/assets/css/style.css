@@ -1,0 +1,275 @@
+@font-face {
+    font-family:'Space Mono', monospace;
+    src: url();
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.heading {
+    color:  #3b5e60;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+.input{
+    width: 60%;
+   
+}
+.main{
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+    gap: 60px;
+    box-shadow: 1px 1px 20px 0px rgba(133, 133, 133, 0.194);
+}
+.bill{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+.bill label{
+    color:#6a7773;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.bill input{
+    color: hsl(183, 100%, 15%);
+    font-size: 14px;
+    width: 90%;
+    background-color:hsl(189, 41%, 97%);
+    border: none;
+    background-image: url(/assets/images/icon-dollar.svg) ;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 24px;
+    direction: rtl;
+    padding-block: 5px;
+    padding-inline: 20px;
+    border-radius: 5px;
+}
+.bill input:focus{
+    outline: none !important;
+    border:2px solid;
+    border-color:  hsl(172, 67%, 45%);
+}
+::placeholder {
+    color: hsl(183, 100%, 15%);
+    opacity: 1; 
+  }
+.percentage{
+    color: #6a7773;
+}
+.percentage label{
+    background-color:hsl(183, 100%, 15%);
+    padding-block:5px;
+    padding-inline: 20px;
+    font-size: 24px;
+    width: 20%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: hsl(189, 41%, 97%);
+    border-radius: 3px;
+}
+#label1{
+    padding-inline: 20px;
+}
+.percentage input{
+    display: none;
+    
+}
+.percentage label:hover{
+background-color:   hsl(172, 67%, 45%);
+}
+input[type = "radio"]:checked + label {
+    background-color:#9de8df ;
+    color: hsl(183, 100%, 15%);
+}
+
+.count{
+    color: #6a7773;
+    margin-top: 40px;
+}
+.count input{
+    color: hsl(183, 100%, 15%);
+    padding: 10px;
+    font-size: 14px;
+    width: 90%;
+    background-color:hsl(189, 41%, 97%);
+    border: none;
+    margin-top: 10px;
+    background-image: url(/assets/images/icon-person.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    font-size: 24px;
+    direction: rtl;
+    padding-block: 5px;
+    padding-inline: 20px;
+    
+    
+}
+
+.count .labels{
+    display: flex;
+    justify-content: space-between;
+}
+.output{
+    background-color: hsl(183, 100%, 15%);
+    padding: 40px;
+    width: 40%;
+    height: 300px;
+    min-height: 100%;
+    color: hsl(189, 41%, 97%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.output h5{
+    color:  hsl(185, 41%, 84%);
+}
+.tip-amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.tip-amount h1{
+    color: hsl(172, 67%, 45%);
+}
+.total-amount{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.total-amount h1{
+    color: hsl(172, 67%, 45%);
+}
+
+button{
+   background-color: hsl(172, 67%, 45%);
+   border: none;
+   padding: 10px;
+   border-radius: 5px;
+   margin-top: 70px;
+}
+button a{
+    color: hsl(183, 100%, 15%);
+    font-weight: bolder;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+button:hover{
+    background-color:#9de8df ;
+}
+#submit{
+    display: none;
+}
+
+/* ///////////////////////responsive////////////////// */
+
+@media screen and (max-width: 545px){
+    button {
+        margin-top: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 526px){
+    .heading{
+        margin-top: 60px;
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px;
+    }
+    .input{
+        width: 100%;
+       
+    }
+    .bill input{
+        width: 85%;
+    }
+    .count input{
+        width: 85%;
+    }
+    .output{
+      
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        height: 210px;
+        
+    }
+    .total{
+       margin-top: 30px;
+    }
+    button{
+        margin-top: 20px;
+     }
+     .percentage label{
+        padding-inline: 20px;
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .input{
+        width: 100%;
+       
+    }
+    .percentage label{
+        width: 33%;
+    }
+    .bill input{
+        width: 85%;
+    }
+    .count input{
+        width: 85%;
+    }
+    .output{
+      
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        height: 210px;
+        
+    }
+    .total{
+       margin-top: 30px;
+    }
+    button{
+        margin-top: 20px;
+     }
+  
+}
